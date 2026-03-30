@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="400">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#fff">
+    <line x1="0" y1="80" x2="900" y2="80"/>
+    <line x1="0" y1="160" x2="900" y2="160"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="0" y1="320" x2="900" y2="320"/>
+    <line x1="180" y1="0" x2="180" y2="400"/>
+    <line x1="360" y1="0" x2="360" y2="400"/>
+    <line x1="540" y1="0" x2="540" y2="400"/>
+    <line x1="720" y1="0" x2="720" y2="400"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">THE GATE — HOW ENFORCEMENT WORKS</text>
+
+  <!-- Step 1: Memory Injection -->
+  <rect x="40" y="80" width="170" height="100" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="70" cy="105" r="12" fill="url(#accent)" filter="url(#glow)" opacity="0.8"/>
+  <text x="70" y="110" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">1</text>
+  <text x="125" y="108" text-anchor="middle" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">HOOK FIRES</text>
+  <text x="125" y="135" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Searches 6,000+</text>
+  <text x="125" y="152" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">entries in &lt;450ms</text>
+  <text x="125" y="169" text-anchor="middle" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="10">Injects relevant memories</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="210" y1="130" x2="255" y2="130" stroke="#6366f1" stroke-width="2" opacity="0.6"/>
+  <polygon points="255,125 265,130 255,135" fill="#6366f1" opacity="0.8"/>
+
+  <!-- Step 2: Claude tries to edit -->
+  <rect x="265" y="80" width="170" height="100" rx="10" fill="#1a1a2e" stroke="#3b82f6" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="295" cy="105" r="12" fill="url(#blue)" filter="url(#glow)" opacity="0.8"/>
+  <text x="295" y="110" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">2</text>
+  <text x="350" y="108" text-anchor="middle" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">CLAUDE ACTS</text>
+  <text x="350" y="135" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Tries to call Edit,</text>
+  <text x="350" y="152" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Write, or Bash</text>
+  <text x="350" y="169" text-anchor="middle" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="10">Any implementation tool</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="435" y1="130" x2="480" y2="130" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+  <polygon points="480,125 490,130 480,135" fill="#ef4444" opacity="0.8"/>
+
+  <!-- Step 3: BLOCKED -->
+  <rect x="490" y="72" width="170" height="116" rx="10" fill="#2a0a0a" stroke="#ef4444" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="520" cy="100" r="12" fill="url(#red)" filter="url(#glow-strong)" opacity="0.9"/>
+  <text x="520" y="105" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">3</text>
+  <text x="575" y="100" text-anchor="middle" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13" font-weight="700">BLOCKED</text>
+  <text x="575" y="125" text-anchor="middle" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="11">Gate reads marker</text>
+  <text x="575" y="142" text-anchor="middle" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="11">Tool call denied</text>
+  <text x="575" y="162" text-anchor="middle" fill="#ef4444" font-family="system-ui, sans-serif" font-size="10" font-weight="600">"Acknowledge your</text>
+  <text x="575" y="177" text-anchor="middle" fill="#ef4444" font-family="system-ui, sans-serif" font-size="10" font-weight="600">memories first"</text>
+
+  <!-- Arrow 3→4 (curves down) -->
+  <path d="M 575 188 L 575 220 Q 575 240 595 240 L 680 240" stroke="#22c55e" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="680,235 690,240 680,245" fill="#22c55e" opacity="0.8"/>
+
+  <!-- Step 4: Acknowledges -->
+  <rect x="690" y="205" width="170" height="100" rx="10" fill="#052e16" stroke="#22c55e" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="720" cy="230" r="12" fill="url(#green)" filter="url(#glow)" opacity="0.8"/>
+  <text x="720" y="235" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">4</text>
+  <text x="775" y="233" text-anchor="middle" fill="#86efac" font-family="system-ui, sans-serif" font-size="11" font-weight="600">ACKNOWLEDGES</text>
+  <text x="775" y="258" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Claude mentions</text>
+  <text x="775" y="275" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">past learnings</text>
+  <text x="775" y="295" text-anchor="middle" fill="#86efac" font-family="system-ui, sans-serif" font-size="10">Marker self-consumed</text>
+
+  <!-- Arrow 4→5 (curves down then left) -->
+  <path d="M 690 280 L 530 280 Q 510 280 510 300 L 510 310" stroke="#22c55e" stroke-width="2" fill="none" opacity="0.6"/>
+  <polygon points="505,310 510,320 515,310" fill="#22c55e" opacity="0.8"/>
+
+  <!-- Step 5: Passes through -->
+  <rect x="415" y="320" width="190" height="65" rx="10" fill="#052e16" stroke="#22c55e" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="445" cy="345" r="12" fill="url(#green)" filter="url(#glow)" opacity="0.8"/>
+  <text x="445" y="350" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">5</text>
+  <text x="510" y="345" text-anchor="middle" fill="#86efac" font-family="system-ui, sans-serif" font-size="12" font-weight="600">TOOLS UNLOCKED</text>
+  <text x="510" y="368" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Claude works with full context</text>
+
+  <!-- Bottom label -->
+  <text x="450" y="395" text-anchor="middle" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-style="italic">Other memory systems skip steps 3–4. That's why they don't work.</text>
+</svg>

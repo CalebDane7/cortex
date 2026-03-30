@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="900" y2="340">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="purple2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="cyan2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="g2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="340" fill="url(#bg2)" rx="12"/>
+
+  <!-- Grid -->
+  <g opacity="0.03" stroke="#fff">
+    <line x1="0" y1="85" x2="900" y2="85"/>
+    <line x1="0" y1="170" x2="900" y2="170"/>
+    <line x1="0" y1="255" x2="900" y2="255"/>
+    <line x1="225" y1="0" x2="225" y2="340"/>
+    <line x1="450" y1="0" x2="450" y2="340"/>
+    <line x1="675" y1="0" x2="675" y2="340"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">TWO PARTS — ONE SYSTEM</text>
+  <text x="450" y="58" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Without the gate, the hook is just another injection system. Without the hook, the gate has nothing to enforce.</text>
+
+  <!-- Part 1 Box -->
+  <rect x="30" y="80" width="410" height="230" rx="12" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+  <rect x="30" y="80" width="410" height="40" rx="12" fill="#7c3aed" opacity="0.15"/>
+  <rect x="30" y="108" width="410" height="2" fill="#7c3aed" opacity="0.2"/>
+
+  <!-- Part 1 Header -->
+  <circle cx="55" cy="100" r="10" fill="url(#purple2)" filter="url(#g2)" opacity="0.9"/>
+  <text x="55" y="104" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="11" font-weight="700">1</text>
+  <text x="80" y="105" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="14" font-weight="700">THE HOOK</text>
+  <text x="215" y="105" fill="#7c3aed" font-family="system-ui, sans-serif" font-size="11" opacity="0.8">Makes Connections</text>
+
+  <!-- Part 1 Content -->
+  <text x="55" y="140" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Fires on every prompt automatically</text>
+
+  <circle cx="55" cy="165" r="4" fill="#7c3aed" opacity="0.7"/>
+  <text x="70" y="169" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Captures</text>
+  <text x="130" y="169" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">corrections, errors, solutions</text>
+
+  <circle cx="55" cy="190" r="4" fill="#7c3aed" opacity="0.7"/>
+  <text x="70" y="194" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Scores</text>
+  <text x="117" y="194" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">IDF + stems + tags + decay</text>
+
+  <circle cx="55" cy="215" r="4" fill="#7c3aed" opacity="0.7"/>
+  <text x="70" y="219" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Injects</text>
+  <text x="120" y="219" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">only HOT + WARM results (~1,000 tokens)</text>
+
+  <circle cx="55" cy="240" r="4" fill="#7c3aed" opacity="0.7"/>
+  <text x="70" y="244" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Deduplicates</text>
+  <text x="155" y="244" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">3-way Jaccard (skip / supersede / append)</text>
+
+  <text x="55" y="275" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-style="italic">Self-correcting. Corrections supersede mistakes.</text>
+  <text x="55" y="292" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-style="italic">Old memories decay. Duplicates collapse. Zero curation.</text>
+
+  <!-- Connection Arrow -->
+  <line x1="440" y1="195" x2="458" y2="195" stroke="#4b5563" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="458,190 468,195 458,200" fill="#4b5563"/>
+
+  <!-- Part 2 Box -->
+  <rect x="468" y="80" width="400" height="230" rx="12" fill="#0c1f3d" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+  <rect x="468" y="80" width="400" height="40" rx="12" fill="#06b6d4" opacity="0.1"/>
+  <rect x="468" y="108" width="400" height="2" fill="#06b6d4" opacity="0.2"/>
+
+  <!-- Part 2 Header -->
+  <circle cx="493" cy="100" r="10" fill="url(#cyan2)" filter="url(#g2)" opacity="0.9"/>
+  <text x="493" y="104" text-anchor="middle" fill="#fff" font-family="system-ui, sans-serif" font-size="11" font-weight="700">2</text>
+  <text x="518" y="105" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="14" font-weight="700">THE GATE</text>
+  <text x="653" y="105" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="11" opacity="0.8">Forces Attention</text>
+
+  <!-- Part 2 Content -->
+  <text x="493" y="140" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">PreToolUse hook on Edit, Write, Bash</text>
+
+  <circle cx="493" cy="165" r="4" fill="#ef4444" opacity="0.8"/>
+  <text x="508" y="169" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Blocks</text>
+  <text x="553" y="169" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">all implementation tools</text>
+
+  <circle cx="493" cy="190" r="4" fill="#f97316" opacity="0.8"/>
+  <text x="508" y="194" fill="#fdba74" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Requires</text>
+  <text x="565" y="194" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Claude to acknowledge memories</text>
+
+  <circle cx="493" cy="215" r="4" fill="#22c55e" opacity="0.8"/>
+  <text x="508" y="219" fill="#86efac" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Releases</text>
+  <text x="563" y="219" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">after acknowledgment (self-consuming)</text>
+
+  <circle cx="493" cy="240" r="4" fill="#06b6d4" opacity="0.7"/>
+  <text x="508" y="244" fill="#67e8f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TTL</text>
+  <text x="535" y="244" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">10-min expiry prevents stale blocks</text>
+
+  <text x="493" y="275" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-style="italic">Non-negotiable. Claude cannot skip, ignore, or bypass.</text>
+  <text x="493" y="292" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-style="italic">This is why Cortex works. This is what others don't have.</text>
+
+  <!-- Bottom -->
+  <text x="450" y="330" text-anchor="middle" fill="#475569" font-family="system-ui, sans-serif" font-size="10" font-style="italic">Together: a governance-forced improvement loop. Apart: just another memory tool Claude ignores.</text>
+</svg>

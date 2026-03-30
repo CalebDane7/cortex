@@ -24,6 +24,10 @@ Every existing memory system injects and hopes.
 
 ## How It Works
 
+<p align="center">
+  <img src="docs/images/two-parts.svg" alt="Cortex Memory — Two Parts, One System" width="100%"/>
+</p>
+
 Think of it like your brain.
 
 Your brain doesn't load every memory into consciousness every time you do something. It makes **connections** — this situation reminds me of that experience. It scores **relevance** — this memory matters right now, that one doesn't. And when something is important enough, it **forces your attention** — you can't ignore it.
@@ -51,6 +55,10 @@ Claude has to acknowledge what it learned from past sessions before it can touch
 One block per cycle. Self-consuming. But non-negotiable.
 
 **This is why Cortex works and everything else doesn't.** Other systems give Claude a choice. Cortex doesn't.
+
+<p align="center">
+  <img src="docs/images/gate-flow.svg" alt="Gate Enforcement Flow" width="100%"/>
+</p>
 
 ---
 
@@ -109,6 +117,10 @@ Zero external dependencies. Pure Python stdlib. No API keys required. No telemet
 | Everyone else | Yes. |
 
 This is the column that matters. Everything else is optimization. If Claude can ignore your memories, your memory system doesn't work.
+
+<p align="center">
+  <img src="docs/images/comparison.svg" alt="Cortex vs Other Memory Systems" width="100%"/>
+</p>
 
 ---
 
