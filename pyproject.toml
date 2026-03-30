@@ -5,7 +5,7 @@ build-backend = "setuptools.backends._legacy:_Backend"
 [project]
 name = "cortex-memory"
 version = "0.1.0"
-description = "Self-correcting memory for Claude Code. 250 tokens. Zero vector databases."
+description = "Governance-forced memory layer for Claude Code. The first AI memory system that actually works."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
