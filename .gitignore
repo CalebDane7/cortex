@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cortex runtime data (user-specific, not package)
+*.db
+*.log
+
+# Internal tooling
+.ai-project/
+.tldr/

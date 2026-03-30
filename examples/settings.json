@@ -1,0 +1,50 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m cortex.hooks.memory_awareness",
+            "timeout": 10000
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m cortex.hooks.correction_detector",
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": {
+          "type": "toolName",
+          "pattern": "Bash|Edit|Write|MultiEdit|Read|Grep|Glob|WebSearch|WebFetch"
+        },
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m cortex.hooks.auto_learning",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m cortex.hooks.stop_learning_extractor",
+            "timeout": 45000
+          }
+        ]
+      }
+    ]
+  }
+}

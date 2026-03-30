@@ -1,0 +1,11 @@
+{
+  "k8s": ["kubernetes", "kube"],
+  "tf": ["terraform"],
+  "ts": ["typescript"],
+  "js": ["javascript"],
+  "py": ["python"],
+  "pg": ["postgresql", "postgres"],
+  "gh": ["github"],
+  "ci": ["continuous-integration", "cicd"],
+  "cd": ["continuous-deployment", "cicd"]
+}

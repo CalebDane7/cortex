@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "cortex-memory"
+version = "0.1.0"
+description = "Self-correcting memory for Claude Code. 250 tokens. Zero vector databases."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "Caleb Dane"},
+]
+keywords = ["claude-code", "memory", "ai-memory", "llm", "hooks"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+
+# WHY: Zero external dependencies. The entire system runs on Python stdlib.
+# Query expansion (optional) uses urllib to call Gemini API directly.
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/CalebDane7/cortex"
+Repository = "https://github.com/CalebDane7/cortex"
+Issues = "https://github.com/CalebDane7/cortex/issues"
+
+[project.scripts]
+cortex-install = "cortex.scripts.install:main"
+cortex-distill = "cortex.maintenance.distiller:main"
+
+[tool.setuptools.packages.find]
+include = ["cortex*"]
